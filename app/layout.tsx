@@ -1,7 +1,7 @@
 import "./styles/app.scss";
 
 export const metadata = {
-  title: "Súng Sơn Tây Hồ",
+  title: "Súng Bắn Sơn - Tây Hồ",
   description: "09 111111 21",
   themeColor: "black",
 };

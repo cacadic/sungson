@@ -14,6 +14,7 @@ module.exports = {
         "global-accent": "var(--e-global-color-accent)",
         "global-secondary": "var(--e-global-color-secondary)",
         "global-5174952": "var(--e-global-color-5174952)",
+        "global-background": "var(--e-global-color-eb5be0e)",
       },
     },
     fontFamily: {

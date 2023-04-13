@@ -4,11 +4,14 @@ const nextConfig = {
     appDir: true,
   },
   compiler: {
-    styledComponents: true
+    styledComponents: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
-}
+  reactStrictMode: false,
+  swcMinify: true,
+  output: "standalone",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

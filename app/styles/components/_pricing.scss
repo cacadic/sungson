@@ -1,0 +1,11 @@
+.pricing-card{
+    background-color: #0F130F;
+    border: none;
+    border-radius: 0;
+    min-width: 350px;
+    min-height: 400px;
+
+    .ant-rate .ant-rate-star:not(:last-child) {
+        margin-inline-end: 4px;
+    }
+}

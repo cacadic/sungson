@@ -1,0 +1,17 @@
+[
+  {
+    "img": "/images/pricing/pricing01.jpg",
+    "stars": 3.5,
+    "title": "Pack 250K - 100 Viên Đạn"
+  },
+  {
+    "img": "/images/pricing/pricing02.jpg",
+    "stars": 4,
+    "title": "Pack 350K - 200 Viên Đạn"
+  },
+  {
+    "img": "/images/pricing/pricing03.jpg",
+    "stars": 5,
+    "title": "Pack 450K - 300 Viên Đạn"
+  }
+]
