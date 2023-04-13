@@ -1,53 +1,42 @@
-"use client";
-
-import styled from "@emotion/styled";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Jura } from "next/font/google";
-import classNames from "classnames";
-import Image from "next/image";
 import Text from "../atoms/Text";
 import PaintImage from "../atoms/PaintImage";
+import styled from "styled-components";
 
 const jura = Jura({ subsets: ["latin"] });
 
 const MainSection = () => {
-  const [domLoaded, setDomLoaded] = useState(false);
-
-  useEffect(() => {
-    setDomLoaded(true);
-  }, []);
-
   return (
-    <>
-      {domLoaded && (
-        <MainSectionWrapper>
-          <div className="background-overlay w-full h-screen relative">
-            <div className="absolute bottom-[220px] max-w-[648px] left-[12%]">
-              <div className="relative">
-                <Text type="title" className="text-[80px]">
-                  CLB Súng Sơn Tây Hồ
-                </Text>
-                <PaintImage className="left-[326px] w-[100px] h-[200px] -top-10" />
-                <PaintImage type="yellow" className="left-[65px] w-[100px] h-[200px] top-2" />
-              </div>
-
-              <Text className="text-lg mt-5 mb-5">
-                Chúng tôi có 12 năm kinh nghiệm trong hoạt động vui chơi giải
-                trí súng bắn sơn tại Việt Nam.
-              </Text>
-
-              <a
-                className="text-global-secondary font-hero font-medium"
-                style={{ fontSize: 30 }}
-                href="tel:0911111121"
-              >
-                Đặt Sân Ngay -
-              </a>
-            </div>
+    <MainSectionWrapper>
+      <div className="background-overlay w-full h-screen relative">
+        <div className="absolute bottom-[220px] max-w-[648px] left-[12%]">
+          <div className="relative">
+            <Text type="title" className="text-[80px]">
+              CLB Súng Sơn Tây Hồ
+            </Text>
+            <PaintImage className="left-[326px] w-[100px] h-[200px] -top-10" />
+            <PaintImage
+              type="yellow"
+              className="left-[65px] w-[100px] h-[200px] top-2"
+            />
           </div>
-        </MainSectionWrapper>
-      )}
-    </>
+
+          <Text className="text-lg mt-5 mb-5">
+            Chúng tôi có 12 năm kinh nghiệm trong hoạt động vui chơi giải trí
+            súng bắn sơn tại Việt Nam.
+          </Text>
+
+          <a
+            className="text-global-secondary font-hero font-medium"
+            style={{ fontSize: 30 }}
+            href="tel:0911111121"
+          >
+            Đặt Sân Ngay -
+          </a>
+        </div>
+      </div>
+    </MainSectionWrapper>
   );
 };
 

@@ -1,14 +1,23 @@
 "use client";
 
 import { NextPage } from "next";
-import React from "react";
-import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
+import React, { useEffect, useState } from "react";
 import HomeTemplate from "../templates/HomeTemplate";
 import MobileHomeTemplate from "../templates/MobileHomeTemplate";
+import { isMobile } from "react-device-detect";
 
 const HomePage: NextPage = () => {
-  const breakpoints = useBreakpoint();
-  return <>{breakpoints.lg ? <HomeTemplate /> : <MobileHomeTemplate />}</>;
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+
+  return (
+    <div style={{ opacity: domLoaded ? 1 : 0 }}>
+      {isMobile ? <MobileHomeTemplate /> : <HomeTemplate />}
+    </div>
+  );
 };
 
 export default HomePage;

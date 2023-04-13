@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import classNames from "classnames";
 import { Jura } from "next/font/google";
 import React, { CSSProperties, FunctionComponent, ReactNode } from "react";
