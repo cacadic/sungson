@@ -13,9 +13,7 @@ type PaintProps = {
 const PaintGreen = ({ className, style }: PaintProps) => {
   return (
     <div
-      className={classNames(
-        `absolute left-[326px] top-0 rotate-[225deg] ${className ?? ""}`
-      )}
+      className={classNames(`absolute ${className ?? ""}`)}
       style={{ ...style }}
     >
       <Image
@@ -31,9 +29,7 @@ const PaintGreen = ({ className, style }: PaintProps) => {
 const PaintYellow = ({ className, style }: PaintProps) => {
   return (
     <div
-      className={classNames(
-        `absolute left-0 top-0 rotate-[225deg] ${className ?? ""}`
-      )}
+      className={classNames(`absolute ${className ?? ""}`)}
       style={{ ...style }}
     >
       <Image
@@ -49,9 +45,7 @@ const PaintYellow = ({ className, style }: PaintProps) => {
 const PaintBrown = ({ className, style }: PaintProps) => {
   return (
     <div
-      className={classNames(
-        `absolute left-0 top-0 rotate-[225deg] ${className ?? ""}`
-      )}
+      className={classNames(`absolute ${className ?? ""}`)}
       style={{ ...style }}
     >
       <Image
